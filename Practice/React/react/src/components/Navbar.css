@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    gap: 30px; /* Space between logo and menu */
+    background-color: rgb(132, 223, 143);
+    padding: 15px;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 80px; /* Adjust logo width */
+    height: 50px; /* Adjust logo height */
+    object-fit: contain;
+    margin-right: 20px; /* Adds space between logo and links */
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: rgb(207, 102, 3);
+}
