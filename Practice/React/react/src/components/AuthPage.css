@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to top, #a9a9ff, #000);
+    background: linear-gradient(to top, #f6f6f7,#f6f6f7);
   }
   
   /* Styling for the Auth Card */

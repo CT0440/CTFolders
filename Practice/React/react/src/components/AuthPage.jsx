@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./AuthPage.css"; // ✅ Linking CSS
+import axios from "axios";
+import "./AuthPage.css"; 
 
 const AuthPage = () => {
   const [isSignup, setIsSignup] = useState(false);
@@ -7,7 +8,6 @@ const AuthPage = () => {
   return (
     <div className="auth-container">
       <div className="auth-card">
-        {/* Tabs for Switching */}
         <div className="tabs">
           <button
             className={`tab-button ${!isSignup ? "active" : ""}`}
@@ -45,7 +45,6 @@ const AuthPage = () => {
           </button>
         </form>
 
-        {/* Toggle Signup/Signin */}
         <p>
           {isSignup ? "Already have an account?" : "Not a member?"}{" "}
           <button className="toggle-link" onClick={() => setIsSignup(!isSignup)}>
